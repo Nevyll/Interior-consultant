@@ -268,3 +268,25 @@ footer {
         transform: translateX(0);
     }
 }
+
+@media (max-width:1024px) {
+    .content .right .int img {
+        width: 550px;
+    }   
+    .content {
+        margin-top: 70px;
+    }
+    .content .left p {
+        font-size: 16px;
+    }
+    .right .author .by {
+        font-size: 20px;
+    }
+    .content .right .author {
+        width: 300px;
+        height: 190px;
+        right: 20px;
+        bottom: -100px;
+        padding: 20px;
+    }
+}
