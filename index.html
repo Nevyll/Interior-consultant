@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <title>Interior</title>
+</head>
+<body>
+  <div class="menu-btn" onclick="menuToggle()"><i class="fas fa-bars"></i></div>
+  <div class="wrapper">
+    <header>
+      <div class="logo">Vogue</div>
+      <ul class="menu">
+        <li class="home"><a href="">Home</a></li>
+        <li><a href="">Collection</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="left">
+        <h1>Modern interior</h1>
+        <p>A full-Service residential & <br> commercial interior design and <br> staging company offering <br> professional organizing & <br> eco-services.</p>
+        <h5>Read more <i class="fa-solid fa-arrow-right"></i></h5>
+      </div>
+      <div class="right">
+        <div class="int">
+          <img src="photo1.png" alt="">
+        </div>
+        <div class="author">
+          <div class="present">
+            <div class="avatar"><img src="photo2.png" alt=""></div>
+            <div class="map">
+              <p class="name">Aliza Webber</p>
+              <p class="role">Interior designer</p>
+            </div>
+          </div>
+          <div class="by">Designed in 2020 by <br> Aliza Webber</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="copyright">Liam @devChallenges.io</footer>
+
+  <script type="text/javascript">
+    const menu = document.querySelector('.menu');
+    const menuBtn = document.querySelector('.menu-btn');
+    function menuToggle() {
+      menu.classList.toggle('active');
+      if (menu.classList.contains("active")) {
+        menuBtn.innerHTML = `<i class="fas fa-close"></i>`;
+      } else {
+        menuBtn.innerHTML = `<i class="fas fa-bars"></i>`; 
+      }
+      
+    }
+  </script>
+</body>
+</html>

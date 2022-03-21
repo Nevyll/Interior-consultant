@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background: #181719;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 50px;
+    margin-top: 30px;
+}
+
+header .logo {
+    border: 1px solid #fff;
+    padding: 5px 20px;
+    font-size: 28px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+header .menu {
+    list-style: none;
+    display: flex;
+}
+
+header .menu li {
+    margin: 20px;
+    font-size: 18px;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+header .menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header .menu li.home {
+    font-weight: 700;
+    position: relative;
+}
+
+header .menu li.home:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 16px;
+    left: 0;
+    bottom: -5px;
+}
+
+.content {
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin-bottom: 150px;
+}
+
+.content .left {
+    width: 30%;
+    margin-top: 100px;
+}
+
+.content .left h1{
+    font-family: 'Lora', serif;
+}
+
+.content .left p {
+    margin: 25px 0;
+    font-size: 24px;
+}
+
+.content .left h5 {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.content .left h5 i {
+    padding-left: 5px;
+    align-items: center;
+}
+
+img {
+    width: 30px;
+}
+
+.content .right .int img {
+    width: 700px;
+}
+
+.content .right {
+    position: relative;
+}
+
+.content .right .author {
+    background: #181719;
+    width: 400px;
+    height: 190px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    right: 20px;
+    bottom: -80px;
+    padding: 20px;
+}
+
+.content .right .author .present {
+    display: flex;
+    align-items: center;
+}
+
+.right .author .present .avatar img {
+    width: 70px;
+    border-radius: 50%;
+}
+
+.right .author .present .map {
+    padding-left: 20px;
+}
+
+.right .author .present .map p {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.right .author .present .map p:last-child {
+    padding-top: 10px;
+    color: #828282;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.right .author .by {
+    padding-top: 10px;
+    font-family: 'Lora';
+    font-weight: 700;
+    font-size: 24px;
+}
+
+footer {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333;
+    text-align: center;
+    bottom: 20px;
+    width:100%;
+    height:50px;
+}
+
+.menu-btn {
+    display: none;
+}
+
+@media (max-width:500px) {
+    header {
+        margin-top: 50px;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .content .left {
+        width: 100%;
+        margin-top: 25px;
+    }
+    .content .left h1{
+        font-size: 36px;
+        font-family: 'Lora', serif;
+    }
+    .content .left p {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .content .left h5 {
+        font-size: 14px;
+    }
+    .content .right {
+        margin-top: 35px;
+    }
+    .content .right .int img {
+        width: 350px;
+    }
+    .content .right .author {
+        background: #181719;
+        width: 300px;
+        height: 140px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        position: absolute;
+        right: 20px;
+        bottom: -80px;
+        padding: 20px;
+    }
+    .right .author .present .avatar img {
+        width: 50px;
+    }
+    .right .author .present .map {
+        padding-left: 10px;
+    }
+    .right .author .present .map p {
+        font-size: 12px;
+    }
+    .right .author .present .map p:last-child {
+        padding-top: 4px;
+        font-size: 10px;
+    }
+    .right .author .by {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .content .right .author {
+        padding: 10px 15px;
+    }
+    .menu-btn{
+        display: block;
+        position: absolute;
+        z-index: 2;
+        right: 40px;
+        top: 50px;
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        font-size: 30px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #181719;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-y: auto;
+        flex-direction: column;
+        z-index: 1;
+    }
+    header .menu {
+        transform: translateX(100%);
+        transition: 0.6s;
+    }
+    header .menu.active {
+        transform: translateX(0);
+    }
+}
